@@ -1,6 +1,5 @@
 {
   "name": "netflix",
-  "homepage": "https://abdo121212.github.io/Movies-App" , 
   "version": "0.1.0",
   "private": true,
   "dependencies": {

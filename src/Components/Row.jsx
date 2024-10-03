@@ -12,6 +12,8 @@ export const Row = ({ title, fetchUrl, RowId }) => {
       const res = await axios.get(fetchUrl).then((res) => {
         setData(res.data.results);
       });
+
+      console.log(res);
     };
 
     getData();
@@ -43,7 +45,7 @@ export const Row = ({ title, fetchUrl, RowId }) => {
           className="overflow-auto whitespace-nowrap scroll-smooth scrolling"
         >
           <div className="relative rounded-md  flex items-center justify-center">
-            {data.map((ele , index) => {
+            {data.map((ele, index) => {
               return (
                 <>
                   <Movie ele={ele} key={index} />

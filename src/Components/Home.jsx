@@ -13,6 +13,7 @@ export const Home = () => {
       const req = await axios
         .get(requests.requestPopular)
         .then((res) => setMoives(res.data.results));
+      console.log(req);
     };
 
     getData();
