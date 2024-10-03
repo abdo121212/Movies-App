@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body{
+    background-color: black;
+    font-family: 'Lato' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scrolling::-webkit-scrollbar{
+    display: none;
+}
+
+
+.loading span::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: difference;
+    animation: move 4s infinite;
+    
+}
+
+
+@keyframes move {
+    0%, 100%{
+        left: 0;
+    }
+    50%{
+        left: calc(100% - 100px);
+    }
+    }
+
+    
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
