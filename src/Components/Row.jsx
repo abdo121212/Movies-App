@@ -28,7 +28,7 @@ export const Row = ({ title, fetchUrl, RowId }) => {
     slider.scrollLeft += 500;
   };
   return (
-    <>
+    <section >
       <h3 className="text-white font-bold p-4 md:text-xl capitalize">
         {title}
       </h3>
@@ -61,6 +61,6 @@ export const Row = ({ title, fetchUrl, RowId }) => {
           className="absolute rounded-full duration-500  right-0 z-[7000]  cursor-pointer bg-white opacity-50 hover:opacity-100 hidden group-hover:block"
         />
       </div>
-    </>
+    </section>
   );
 };
